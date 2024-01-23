@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script type="module" src="../js/map.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crea tu pagina</title>
+  </head>
+
+  <body>
+
+    <header>
+      <div id="headerContainer"></div>
+    </header>
+
+    <main>
+
+      <div class="container mt-4" data-bs-theme="dark">
+
+        <div class="row mb-3 d-none d-sm-flex">
+          <div class="col mb-4 w-75 d-flex justify-content-center">
+            <img class="img-fluid shadow" src="https://picsum.photos/800/400" alt="Image random to display">
+          </div>
+        </div>
+
+        <div class="row mb-4">
+          <h2 class="text-center">Contacto</h2>
+        </div>
+
+        <div class="row row-cols-1 row-cols-lg-2 g-4">
+          <div class="col">
+            <form id="form" class="bg-dark p-4 rounded text-body-tertiary">
+              <h2 class="text-center text-body mb-4 line-after">Formulario</h2>
+    
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="nombre-form" placeholder="Nombre" required >
+                <label for="nombre-form">Nombre</label>
+                <span id="msj-nombre" class="text-danger"></span>
+              </div>
+              
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="apellidos-form" placeholder="Apellidos" required>
+                <label for="apellidos-form">Apellidos</label>
+                <span id="msj-apellidos" class="text-danger"></span>
+              </div>
+    
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="email-form" placeholder="Correo electronico" required>
+                <label for="email-form">Correo electronico</label>
+                <span id="msj-email" class="text-danger"></span>
+              </div>
+    
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="telefono-form" placeholder="Telefono" required>
+                <label for="telefono-form">Teléfono</label>
+                <span id="msj-telefono" class="text-danger"></span>
+              </div>
+    
+              <div class="form-floating mb-3">
+                <textarea class="form-control" placeholder="Comentarios" id="textarea-form" style="height: 200px" required></textarea>
+                <label for="textarea-form">Comentarios</label>
+                <span id="msj-textarea" class="text-danger"></span>
+              </div>
+    
+              <div class="d-grid gap-2 d-md-flex justify-content-center">
+                <button id="btn-submit" type="submit" class="btn btn-success" disabled>Enviar</button>
+                <button type="reset" class="btn btn-outline-danger">Vaciar</button>
+              </div>
+            </form>
+          </div>
+
+          <div class="col">
+            <div id="map" class="rounded"></div>
+          </div>
+        </div>
+
+        
+        
+        
+
+      </div>
+      
+
+    </main>
+    
+    
+
+
+    <footer class="text-center text-lg-start text-dark mt-5 bg-tertiary" style="background-color: #ECEFF1">
+     <div id="footerContainer"></div>
+    </footer>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvDP9yTm9LHD4R8ZhHbAZBo4FhDT9e9JE&callback=initMap&v=weekly" defer></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="../js/form.js"></script>
+    <script type="module" src="../js/main.js"></script>
+  </body>
+</html>
+
