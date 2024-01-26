@@ -16,6 +16,19 @@ body{
 
 header{
   grid-area: my-header;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: var(--bs-secondary);
+}
+
+header h1{
+  color: #fff;
+  font-size: 32px;
+}
+
+header .active{
+  border-bottom: 4px solid var(--bs-success);
 }
 
 main{
@@ -64,9 +77,7 @@ form h2::after {
   z-index: 999;
 }
 
-header .active{
-  border-bottom: 4px solid var(--bs-success);
-}
+
 
 .icon-sm{
   width: 30px;
@@ -81,4 +92,18 @@ header .active{
 
 #map {
   min-height: 660px;
+}
+
+#carousel{
+  max-width: 960px;
+}
+
+div hr{
+  width: 60px;
+  background-color: var(--bs-success);
+  height: 2px;
+}
+
+#textarea-form{
+  height: 200px;
 }
