@@ -28,7 +28,7 @@ header h1{
 }
 
 header .active{
-  border-bottom: 4px solid var(--bs-success);
+  border-bottom: 4px solid var(--bs-white);
 }
 
 main{
@@ -106,4 +106,8 @@ div hr{
 
 #textarea-form{
   height: 200px;
+}
+
+.logo{
+  max-height: 50px;
 }
