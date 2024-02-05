@@ -1,0 +1,1 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5c6d83a1-f8f8-4f5f-b47f-01a6ee17a345/deploy-status)](https://app.netlify.com/sites/adrian-project-master/deploys)
