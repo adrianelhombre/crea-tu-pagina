@@ -111,3 +111,15 @@ div hr{
 .logo{
   max-height: 50px;
 }
+
+.img-carousel {
+  aspect-ratio: 5/2;
+}
+
+.img-card{
+  aspect-ratio: 300/203;
+}
+
+.img-contact{
+  aspect-ratio: 2/1;
+}
